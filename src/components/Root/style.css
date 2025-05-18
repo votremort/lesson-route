@@ -1,0 +1,19 @@
+.nav{
+  margin: 0px auto;
+  padding: 25px;
+  background-color: rgb(250, 232, 215);
+  display: flex;
+  gap: 15px;
+}
+.pending{
+  color: red;
+}
+.active{
+  color: green;
+}
+.transitioning{
+  color: blue;
+}
+.navLink{
+  text-decoration: none;
+}
