@@ -4,6 +4,8 @@ import { Root } from './components/Root';
 import './App.css';
 import { Main } from './pages/main';
 import { Blog } from './pages/blog';
+import { Post } from './pages/posts/components/Post';
+import { Item } from './pages/blog/components/Item';
 
 function App() {
   const router = createBrowserRouter([
@@ -20,8 +22,16 @@ function App() {
           element: <Posts />
         },
         {
+          path: 'posts/:postId',
+          element: <Post />
+        },
+        {
           path: 'blog',
           element: <Blog/>
+        },
+        {
+          path: 'blog/:itemId',
+          element: <Item />
         }
       ]
     }
